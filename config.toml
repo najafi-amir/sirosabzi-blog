@@ -1,0 +1,23 @@
+baseURL = "https://sirosabzi.com/"
+languageCode = "en-us"
+title = "Sirosabzi"
+theme = "ananke"
+paginate = 10
+
+[params]
+  description = "A food blog celebrating Persian and international cuisine"
+  author = "Amir"
+  
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/pages/about/"
+    weight = 3
