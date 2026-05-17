@@ -1,9 +1,32 @@
-<div class="recipe" style="background-color: #f9f9f9; padding: 20px; border-left: 4px solid #8B4513; margin: 20px 0; border-radius: 4px;">
-  <strong>Recipe Info</strong><br>
+<div class="recipe-card">
   {{ with .Page.Params.recipe }}
-  <span>🍽 {{ .yield }}</span> &nbsp;|&nbsp;
-  <span>⏱ Prep: {{ .prep_time_minutes }}min</span> &nbsp;|&nbsp;
-  <span>🔥 Cook: {{ .cook_time_minutes }}min</span> &nbsp;|&nbsp;
-  <span>📊 {{ .difficulty }}</span>
+  <div class="recipe-stat">
+    <span class="icon">🍽</span>
+    <div>
+      <p class="label">Serves</p>
+      <p class="value">{{ .yield }}</p>
+    </div>
+  </div>
+  <div class="recipe-stat">
+    <span class="icon">⏱</span>
+    <div>
+      <p class="label">Prep</p>
+      <p class="value">{{ .prep_time_minutes }} min</p>
+    </div>
+  </div>
+  <div class="recipe-stat">
+    <span class="icon">🔥</span>
+    <div>
+      <p class="label">Cook</p>
+      <p class="value">{{ .cook_time_minutes }} min</p>
+    </div>
+  </div>
+  <div class="recipe-stat">
+    <span class="icon">📊</span>
+    <div>
+      <p class="label">Level</p>
+      <p class="value">{{ .difficulty }}</p>
+    </div>
+  </div>
   {{ end }}
 </div>

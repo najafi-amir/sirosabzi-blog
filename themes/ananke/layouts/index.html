@@ -1,10 +1,10 @@
 {{ define "main" }}
-    {{ .Content }}
-    {{ range (where .Site.RegularPages "Section" "posts") }}
-    <article style="margin: 2rem 0; padding: 1rem; border-bottom: 1px solid #eee;">
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-        <p style="color: #666; margin: 0.5rem 0;">{{ .Date.Format "Jan 2, 2006" }}</p>
-        <p>{{ .Description }}</p>
-    </article>
-    {{ end }}
+{{ .Content }}
+{{ range (where .Site.RegularPages "Section" "posts") }}
+<article class="post-card">
+    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+    <p>{{ .Description }}</p>
+</article>
+{{ end }}
 {{ end }}
