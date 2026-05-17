@@ -1,32 +1,21 @@
+{{- $_ := .Inner -}}
 <div class="recipe-card">
   {{ with .Page.Params.recipe }}
   <div class="recipe-stat">
     <span class="icon">🍽</span>
-    <div>
-      <p class="label">Serves</p>
-      <p class="value">{{ .yield }}</p>
-    </div>
+    <div><p class="label">Serves</p><p class="value">{{ .yield }}</p></div>
   </div>
   <div class="recipe-stat">
     <span class="icon">⏱</span>
-    <div>
-      <p class="label">Prep</p>
-      <p class="value">{{ .prep_time_minutes }} min</p>
-    </div>
+    <div><p class="label">Prep</p><p class="value">{{ .prep_time_minutes }} min</p></div>
   </div>
   <div class="recipe-stat">
     <span class="icon">🔥</span>
-    <div>
-      <p class="label">Cook</p>
-      <p class="value">{{ .cook_time_minutes }} min</p>
-    </div>
+    <div><p class="label">Cook</p><p class="value">{{ .cook_time_minutes }} min</p></div>
   </div>
   <div class="recipe-stat">
     <span class="icon">📊</span>
-    <div>
-      <p class="label">Level</p>
-      <p class="value">{{ .difficulty }}</p>
-    </div>
+    <div><p class="label">Level</p><p class="value">{{ .difficulty }}</p></div>
   </div>
   {{ end }}
 </div>
