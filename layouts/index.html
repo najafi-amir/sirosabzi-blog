@@ -21,7 +21,7 @@
 <div id="post-list">
 {{ range (where .Site.RegularPages "Section" "posts") }}
 <article class="post-card{{ if .Params.image }} has-image{{ end }}"
-  data-dietary="{{ delimit .Params.dietary "," }}"
+  data-dietary="{{ if .Params.dietary }}{{ strings.Join .Params.dietary "," }}{{ end }}"
   data-difficulty="{{ with .Params.recipe }}{{ .difficulty }}{{ end }}">
   {{ if .Params.image }}
   <a href="{{ .Permalink }}" class="card-thumb">
