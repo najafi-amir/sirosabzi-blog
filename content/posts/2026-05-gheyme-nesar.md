@@ -4,7 +4,7 @@ date = 2026-05-17
 description = "A royal Persian rice layered with saffron meat, barberries, and jewel-like slivers of pistachio, almond, and bitter orange peel"
 tags = ["persian", "rice", "saffron", "festive", "lamb", "meat"]
 categories = ["recipes"]
-draft = true
+draft = false
 
 [recipe]
 yield = "4 servings"
