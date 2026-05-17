@@ -268,6 +268,27 @@
       gtag('js', new Date());
       gtag('config', 'G-2CEB9PTEG2');
     </script>
+    {{ if and .IsPage .Params.recipe }}
+    {{ $r := .Params.recipe }}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Recipe",
+      "name": {{ .Title | jsonify }},
+      "description": {{ .Description | jsonify }},
+      "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+      "author": { "@type": "Person", "name": "Amir" },
+      "prepTime": "PT{{ $r.prep_time_minutes }}M",
+      "cookTime": "PT{{ $r.cook_time_minutes }}M",
+      "totalTime": "PT{{ add $r.prep_time_minutes $r.cook_time_minutes }}M",
+      "recipeYield": {{ $r.yield | jsonify }},
+      "recipeCuisine": {{ $r.cuisine | jsonify }},
+      "url": {{ .Permalink | jsonify }}{{ with .Params.image }},
+      "image": {{ . | absURL | jsonify }}{{ end }}{{ with .Params.tags }},
+      "keywords": {{ strings.Join . ", " | jsonify }}{{ end }}
+    }
+    </script>
+    {{ end }}
 </head>
 <body>
     <header>
