@@ -12,8 +12,26 @@ prep_time_minutes = 60
 cook_time_minutes = 90
 difficulty = "difficult"
 cuisine = "Persian"
+category = "Main Course"
 dietary = ["meat"]
 ingredient_count = 15
+ingredients = [
+  "400g lamb or beef, cut into 2x2 cm pieces",
+  "2 medium onions, finely diced",
+  "1 cinnamon stick",
+  "3-4 cardamom pods",
+  "1/2 tsp turmeric",
+  "1 tbsp tomato paste",
+  "1/2 tsp ground saffron (brewed in 3 tbsp ice water)",
+  "4 tbsp bitter orange peel slivers (khalal narenj)",
+  "6 tbsp barberries (zereshk)",
+  "1 tbsp sugar",
+  "1 tsp rose water",
+  "1 tbsp lemon juice",
+  "3 cups basmati rice",
+  "4 tbsp pistachio slivers",
+  "4 tbsp almond slivers"
+]
 +++
 
 ## More Than a Meal
