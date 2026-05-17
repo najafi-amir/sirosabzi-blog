@@ -141,7 +141,7 @@
             margin-top: 5rem;
             border-top: 1px solid #E8DDD2;
             text-align: center;
-            color: #B08C74;
+            color: #1a1a1a;
             font-size: 13px;
             letter-spacing: 0.03em;
         }
@@ -151,7 +151,7 @@
     <header>
         <div class="header-inner">
             <a href="/" class="header-logo">
-                <img src="/images/logo.png" alt="{{ .Site.Title }}">
+                <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 26px; color: #3D2B1F; letter-spacing: 0.04em;">SIR و SABZI</span>
             </a>
             <nav>
                 {{ range .Site.Menus.main }}
@@ -164,7 +164,8 @@
         {{ block "main" . }}{{ end }}
     </main>
     <footer>
-        <p>&copy; {{ now.Year }} {{ .Site.Params.author }} &nbsp;·&nbsp; {{ .Site.Title }}</p>
+        <a href="/"><img src="/images/logo.png" alt="{{ .Site.Title }}" style="height: 70px; width: auto; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto;"></a>
+        <p>&copy; {{ now.Year }} &nbsp;·&nbsp; {{ .Site.Title }}</p>
     </footer>
 </body>
 </html>
