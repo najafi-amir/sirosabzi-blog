@@ -2,17 +2,17 @@
 title = "Gheyme Nesar: The Rice Dish Fit for a Feast"
 date = 2026-05-17
 description = "A royal Persian rice layered with saffron meat, barberries, and jewel-like slivers of pistachio, almond, and bitter orange peel"
-tags = ["persian", "rice", "saffron", "festive", "lamb"]
+tags = ["persian", "rice", "saffron", "festive", "lamb", "meat"]
 categories = ["recipes"]
 draft = true
 
 [recipe]
 yield = "4 servings"
-prep_time_minutes = 30
+prep_time_minutes = 60
 cook_time_minutes = 90
-difficulty = "moderate"
+difficulty = "difficult"
 cuisine = "Persian"
-dietary = []
+dietary = ["meat"]
 ingredient_count = 15
 +++
 

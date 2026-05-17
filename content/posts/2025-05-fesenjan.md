@@ -2,7 +2,7 @@
 title = "Fesenjan: A Pomegranate-Walnut Love Letter"
 date = 2025-05-16
 description = "A Persian pomegranate stew that finally came together after two burnt attempts"
-tags = ["persian", "pomegranate", "comfort-food", "stew"]
+tags = ["persian", "pomegranate", "comfort-food", "stew", "meat", "vegetarian"]
 categories = ["recipes"]
 draft = false
 
@@ -12,7 +12,7 @@ prep_time_minutes = 20
 cook_time_minutes = 90
 difficulty = "moderate"
 cuisine = "Persian"
-dietary = []
+dietary = ["meat", "vegetarian"]
 ingredient_count = 6
 +++
 
@@ -55,4 +55,6 @@ That's basically it.
 
 You can eat fesenjan with whatever you have around. Bread works fine. Rice is better. If you feel like it, add some small meatballs or pieces of chicken breast into the sauce and let them cook with it.
 
-The beauty of this stew is its flexibility—it invites interpretation while holding its essential character. That's what makes it timeless.
+**Vegetarian version:** Fesenjan is one of those rare dishes where omitting the meat changes very little. The walnut-pomegranate sauce is so rich and complete on its own that it barely notices the absence. Replace the chicken with grilled halloumi or pan-fried slices of firm cheese — they hold their shape in the sauce and absorb the flavour beautifully. Some people add roasted butternut squash or aubergine instead, which gives the dish an earthier, softer character.
+
+The beauty of this stew is its flexibility — it invites interpretation while holding its essential character. That's what makes it timeless.
