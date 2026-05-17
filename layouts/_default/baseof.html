@@ -14,7 +14,7 @@
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}">
     {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
-    {{ if .IsPage }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02" }}">{{ end }}
+    {{ if .IsPage }}<meta property="article:published_time" content="{{ .Date.Format `2006-01-02` }}">{{ end }}
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="{{ if .Params.image }}summary_large_image{{ else }}summary{{ end }}">
@@ -288,24 +288,23 @@
     </script>
     {{ if and .IsPage .Params.recipe }}
     {{ $r := .Params.recipe }}
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "Recipe",
-      "name": {{ .Title | jsonify }},
-      "description": {{ .Description | jsonify }},
-      "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
-      "author": { "@type": "Person", "name": "Amir" },
-      "prepTime": "PT{{ $r.prep_time_minutes }}M",
-      "cookTime": "PT{{ $r.cook_time_minutes }}M",
-      "totalTime": "PT{{ math.Add $r.prep_time_minutes $r.cook_time_minutes }}M",
-      "recipeYield": {{ $r.yield | jsonify }},
-      "recipeCuisine": {{ $r.cuisine | jsonify }},
-      "url": {{ .Permalink | jsonify }}{{ with .Params.image }},
-      "image": {{ . | absURL | jsonify }}{{ end }}{{ with .Params.tags }},
-      "keywords": {{ strings.Join . ", " | jsonify }}{{ end }}
-    }
-    </script>
+    {{ $jsonld := dict
+      "@context" "https://schema.org/"
+      "@type" "Recipe"
+      "name" .Title
+      "description" .Description
+      "datePublished" (.Date.Format "2006-01-02")
+      "author" (dict "@type" "Person" "name" "Amir")
+      "prepTime" (printf "PT%dM" $r.prep_time_minutes)
+      "cookTime" (printf "PT%dM" $r.cook_time_minutes)
+      "totalTime" (printf "PT%dM" (math.Add $r.prep_time_minutes $r.cook_time_minutes))
+      "recipeYield" $r.yield
+      "recipeCuisine" $r.cuisine
+      "url" .Permalink
+    }}
+    {{ with .Params.image }}{{ $jsonld = merge $jsonld (dict "image" (. | absURL)) }}{{ end }}
+    {{ with .Params.tags }}{{ $jsonld = merge $jsonld (dict "keywords" (strings.Join . ", ")) }}{{ end }}
+    <script type="application/ld+json">{{ $jsonld | jsonify | safeHTML }}</script>
     {{ end }}
 </head>
 <body>
