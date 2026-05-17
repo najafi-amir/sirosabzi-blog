@@ -2,7 +2,6 @@ baseURL = "https://sirosabzi.com/"
 locale = "en-us"
 title = "SIR و SABZI"
 paginate = 10
-theme = "ananke"
 
 [outputs]
   home     = ["HTML", "RSS", "JSON"]
