@@ -22,7 +22,7 @@ ingredient_count = 15
 
 This is not a quick weeknight dinner. This is a weekend feast — the kind you make when you want to honour your guests, or simply honour yourself.
 
-{{< recipe >}}
+{{< recipe />}}
 
 ### For the Meat
 

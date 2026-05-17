@@ -25,7 +25,7 @@ After two failed attempts and a kitchen filled with burnt walnut smoke, I finall
 
 The third time, everything aligned. The walnuts toasted without burning. The pomegranate juice balanced against honey. And somewhere in those ninety minutes of simmering, the flavors stopped fighting and started singing.
 
-{{< recipe >}}
+{{< recipe />}}
 
 ### Ingredients
 
