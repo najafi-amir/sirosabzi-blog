@@ -28,7 +28,3 @@ theme = "ananke"
     name = "About"
     url = "/pages/about/"
     weight = 3
-  [[menu.main]]
-    name = "Search"
-    url = "/search/"
-    weight = 4
