@@ -1,71 +1,17 @@
 {{ define "main" }}
 {{ .Content }}
-
-<div class="filter-bar">
-  <div class="filter-group">
-    <span class="filter-label">Diet</span>
-    <button class="filter-btn active" data-group="diet" data-value="all">All</button>
-    <button class="filter-btn" data-group="diet" data-value="vegetarian">Vegetarian</button>
-    <button class="filter-btn" data-group="diet" data-value="meat">Meat</button>
-  </div>
-  <div class="filter-sep"></div>
-  <div class="filter-group">
-    <span class="filter-label">Level</span>
-    <button class="filter-btn active" data-group="level" data-value="all">All</button>
-    <button class="filter-btn" data-group="level" data-value="easy">Easy</button>
-    <button class="filter-btn" data-group="level" data-value="moderate">Moderate</button>
-    <button class="filter-btn" data-group="level" data-value="difficult">Difficult</button>
-  </div>
-</div>
-
-<div id="post-list">
 {{ range (where .Site.RegularPages "Section" "posts") }}
-<article class="post-card{{ if .Params.image }} has-image{{ end }}"
-  data-dietary="{{ if .Params.dietary }}{{ strings.Join .Params.dietary "," }}{{ end }}"
-  data-difficulty="{{ with .Params.recipe }}{{ .difficulty }}{{ end }}">
-  {{ if .Params.image }}
-  <a href="{{ .Permalink }}" class="card-thumb">
-    <img src="{{ .Params.image }}" alt="{{ .Title }}">
-  </a>
-  <div class="card-body">
-  {{ end }}
-    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
-    <p>{{ .Description }}</p>
-  {{ if .Params.image }}</div>{{ end }}
+<article class="post-card{{ if .Params.image }} has-image{{ end }}">
+    {{ if .Params.image }}
+    <a href="{{ .Permalink }}" class="card-thumb">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </a>
+    <div class="card-body">
+    {{ end }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Description }}</p>
+    {{ if .Params.image }}</div>{{ end }}
 </article>
 {{ end }}
-</div>
-<p id="no-results" style="display:none; padding: 2rem 0; color: #999; font-size: 15px;">No recipes match your selection.</p>
-
-<script>
-  const filters = { diet: 'all', level: 'all' };
-
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const group = btn.dataset.group;
-      const value = btn.dataset.value;
-      filters[group] = value;
-      document.querySelectorAll(`.filter-btn[data-group="${group}"]`).forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      applyFilters();
-    });
-  });
-
-  function applyFilters() {
-    let visible = 0;
-    document.querySelectorAll('#post-list .post-card').forEach(card => {
-      const dietary = card.dataset.dietary.split(',').map(s => s.trim());
-      const difficulty = card.dataset.difficulty.trim();
-
-      const dietOk = filters.diet === 'all' || dietary.includes(filters.diet);
-      const levelOk = filters.level === 'all' || difficulty === filters.level;
-
-      const show = dietOk && levelOk;
-      card.style.display = show ? '' : 'none';
-      if (show) visible++;
-    });
-    document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
-  }
-</script>
 {{ end }}
