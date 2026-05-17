@@ -5,6 +5,8 @@ description = "A Persian pomegranate stew that finally came together after two b
 tags = ["persian", "pomegranate", "comfort-food", "stew"]
 categories = ["recipes"]
 draft = false
+image = "https://images.pexels.com/photos/5718071/pexels-photo-5718071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750"
+image_credit = "Photo via Pexels (placeholder — replace with your own)"
 
 [recipe]
 yield = "4-5 servings"

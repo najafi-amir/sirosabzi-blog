@@ -1,13 +1,15 @@
 baseURL = "https://sirosabzi.com/"
 languageCode = "en-us"
-title = "Sirosabzi"
-theme = "ananke"
+title = "SIR و SABZI"
 paginate = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
   description = "A food blog celebrating Persian and international cuisine"
   author = "Amir"
-  
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -21,3 +23,7 @@ paginate = 10
     name = "About"
     url = "/pages/about/"
     weight = 3
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 4
