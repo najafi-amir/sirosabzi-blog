@@ -25,9 +25,10 @@ After two failed attempts and a kitchen filled with burnt walnut smoke, I finall
 
 The third time, everything aligned. The walnuts toasted without burning. The pomegranate juice balanced against honey. And somewhere in those ninety minutes of simmering, the flavors stopped fighting and started singing.
 
-{{< recipe "fesenjan" >}}
+{{< recipe >}}
 
 ### Ingredients
+
 - 1 cup shelled walnuts
 - 1 cup pomegranate juice (fresh or bottled)
 - 2-3 tbsp honey
@@ -49,8 +50,6 @@ The third time, everything aligned. The walnuts toasted without burning. The pom
 **Fifth**, add cold water. Yes, cold. Lower the heat and let it cook slowly for 1 to 2 hours. You're looking for a thick, rich sauce where the walnut oil is sitting on top. At the end, add pomegranate juice and let it simmer for another 15 minutes.
 
 That's basically it.
-
-{{< /recipe >}}
 
 ## Serving and Variations
 
