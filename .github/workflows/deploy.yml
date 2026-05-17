@@ -21,11 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Hugo
-        run: |
-          wget -q -O hugo.deb https://github.com/gohugoio/hugo/releases/download/v0.125.4/hugo_extended_0.125.4_linux-amd64.deb
-          dpkg -x hugo.deb /tmp/hugo-pkg
-          sudo cp /tmp/hugo-pkg/usr/local/bin/hugo /usr/local/bin/hugo
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.125.4'
+          extended: true
 
       - name: Build
         run: hugo --minify
