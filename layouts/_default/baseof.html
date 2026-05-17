@@ -303,10 +303,7 @@
       "url" .Permalink
     }}
     {{ with .Params.image }}{{ $jsonld = merge $jsonld (dict "image" (. | absURL)) }}{{ end }}
-    {{ with .Params.tags }}
-    {{ $keywords := strings.Join . ", " }}
-    {{ $jsonld = merge $jsonld (dict "keywords" $keywords) }}
-    {{ end }}
+
     <script type="application/ld+json">{{ $jsonld | jsonify | safeHTML }}</script>
     {{ end }}
 </head>
