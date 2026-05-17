@@ -295,9 +295,9 @@
       "description" .Description
       "datePublished" (.Date.Format "2006-01-02")
       "author" (dict "@type" "Person" "name" "Amir")
-      "prepTime" (printf "PT%dM" $r.prep_time_minutes)
-      "cookTime" (printf "PT%dM" $r.cook_time_minutes)
-      "totalTime" (printf "PT%dM" (math.Add $r.prep_time_minutes $r.cook_time_minutes))
+      "prepTime" (print "PT" $r.prep_time_minutes "M")
+      "cookTime" (print "PT" $r.cook_time_minutes "M")
+      "totalTime" (print "PT" (math.Add $r.prep_time_minutes $r.cook_time_minutes) "M")
       "recipeYield" $r.yield
       "recipeCuisine" $r.cuisine
       "url" .Permalink
