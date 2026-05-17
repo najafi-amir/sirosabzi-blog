@@ -19,7 +19,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="{{ if .Params.image }}summary_large_image{{ else }}summary{{ end }}">
     <meta name="twitter:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}">
-    <meta name="twitter:description" content="{{ with .Description }}{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ $.Site.Params.description }}{{ end }}">
     {{ with .Params.image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="/index.xml">
@@ -298,7 +298,7 @@
       "author": { "@type": "Person", "name": "Amir" },
       "prepTime": "PT{{ $r.prep_time_minutes }}M",
       "cookTime": "PT{{ $r.cook_time_minutes }}M",
-      "totalTime": "PT{{ add $r.prep_time_minutes $r.cook_time_minutes }}M",
+      "totalTime": "PT{{ math.Add $r.prep_time_minutes $r.cook_time_minutes }}M",
       "recipeYield": {{ $r.yield | jsonify }},
       "recipeCuisine": {{ $r.cuisine | jsonify }},
       "url": {{ .Permalink | jsonify }}{{ with .Params.image }},
