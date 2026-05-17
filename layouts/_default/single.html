@@ -4,11 +4,6 @@
     {{ if not .Date.IsZero }}
     <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
     {{ end }}
-    {{ with .Params.tags }}
-    <p class="post-tags">
-        {{ range . }}<a href="/tags/{{ . | urlize }}/" class="tag">{{ . }}</a>{{ end }}
-    </p>
-    {{ end }}
 </div>
 {{ if .Params.image }}
 <div class="post-image">
