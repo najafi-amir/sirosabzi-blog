@@ -304,7 +304,7 @@
     }}
     {{ with .Params.image }}{{ $jsonld = merge $jsonld (dict "image" (. | absURL)) }}{{ end }}
 
-    <script type="application/ld+json">{{ $jsonld | jsonify | safeHTML }}</script>
+    <script type="application/ld+json">{{ $jsonld | jsonify | safeJS }}</script>
     {{ end }}
 </head>
 <body>
