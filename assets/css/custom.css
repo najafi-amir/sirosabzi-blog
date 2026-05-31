@@ -1,0 +1,72 @@
+/* ── Recipe card ── */
+.recipe-card {
+    background: rgb(var(--color-primary-200));
+    border-radius: 8px;
+    padding: 1.25rem 1.75rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.recipe-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.4rem 2rem 0.4rem 0;
+    margin-right: 2rem;
+    border-right: 1px solid rgb(var(--color-primary-300));
+}
+
+.recipe-stat:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.recipe-stat .icon {
+    font-size: 20px;
+    line-height: 1;
+}
+
+.recipe-stat .label {
+    font-size: 10px;
+    color: rgb(var(--color-primary-700));
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2px;
+}
+
+.recipe-stat .value {
+    font-size: 14px;
+    color: rgb(var(--color-primary-900));
+    font-weight: 500;
+}
+
+@media (max-width: 640px) {
+    .recipe-card {
+        padding: 1rem;
+    }
+    .recipe-stat {
+        width: 50%;
+        border-right: none;
+        margin-right: 0;
+        padding: 0.5rem 0.5rem;
+        border-bottom: 1px solid rgb(var(--color-primary-300));
+    }
+    .recipe-stat:nth-child(odd) {
+        border-right: 1px solid rgb(var(--color-primary-300));
+    }
+    .recipe-stat:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+}
+
+/* ── Support page ── */
+.support-cta {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.support-cta img {
+    display: inline-block;
+}

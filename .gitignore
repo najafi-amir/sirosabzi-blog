@@ -1,8 +1,10 @@
 # Hugo
 public/
-resources/_gen/
+resources/
 .hugo_build.lock
-themes/ananke/
+
+# Hugo modules cache
+/tmp/
 
 # OS
 .DS_Store
