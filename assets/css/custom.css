@@ -1,6 +1,28 @@
+/* ── Header & Footer: warm tan background ── */
+header {
+    background-color: #C9B49A;
+    border-bottom: 1px solid #B8A088;
+}
+
+footer {
+    background-color: #C9B49A;
+    border-top: 1px solid #B8A088;
+    margin-top: 3rem;
+}
+
+.dark header {
+    background-color: #5C4636;
+    border-bottom-color: #4A3528;
+}
+
+.dark footer {
+    background-color: #5C4636;
+    border-top-color: #4A3528;
+}
+
 /* ── Recipe card ── */
 .recipe-card {
-    background: rgb(var(--color-primary-200));
+    background: rgb(var(--color-primary-100));
     border-radius: 8px;
     padding: 1.25rem 1.75rem;
     margin: 2rem 0;
@@ -15,7 +37,7 @@
     gap: 10px;
     padding: 0.4rem 2rem 0.4rem 0;
     margin-right: 2rem;
-    border-right: 1px solid rgb(var(--color-primary-300));
+    border-right: 1px solid rgb(var(--color-primary-200));
 }
 
 .recipe-stat:last-child {
@@ -51,22 +73,55 @@
         border-right: none;
         margin-right: 0;
         padding: 0.5rem 0.5rem;
-        border-bottom: 1px solid rgb(var(--color-primary-300));
+        border-bottom: 1px solid rgb(var(--color-primary-200));
     }
     .recipe-stat:nth-child(odd) {
-        border-right: 1px solid rgb(var(--color-primary-300));
+        border-right: 1px solid rgb(var(--color-primary-200));
     }
     .recipe-stat:nth-last-child(-n+2) {
         border-bottom: none;
     }
 }
 
-/* ── Support page ── */
-.support-cta {
+/* ── Footer extras ── */
+.footer-extras {
     text-align: center;
-    margin: 3rem 0;
+    padding-top: 1.5rem;
+    margin-top: 1.25rem;
+    border-top: 1px solid #B8A088;
 }
 
-.support-cta img {
-    display: inline-block;
+.dark .footer-extras {
+    border-top-color: #4A3528;
+}
+
+.footer-logo {
+    height: 120px;
+    width: auto;
+    display: block;
+    margin: 0 auto 0.75rem;
+}
+
+.footer-meta {
+    font-size: 12px;
+    color: #5C4636;
+    margin-bottom: 0.3rem;
+    letter-spacing: 0.03em;
+}
+
+.dark .footer-meta {
+    color: #D4B89A;
+}
+
+.footer-meta a {
+    color: #7A5C3E;
+    text-decoration: none;
+}
+
+.footer-meta a:hover {
+    color: #C4622D;
+}
+
+.dark .footer-meta a {
+    color: #E8C9A8;
 }
