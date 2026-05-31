@@ -2,6 +2,7 @@
 public/
 resources/_gen/
 .hugo_build.lock
+themes/ananke/
 
 # OS
 .DS_Store
