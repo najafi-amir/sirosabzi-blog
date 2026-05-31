@@ -13,7 +13,7 @@ cook_time_minutes = 90
 difficulty = "moderate"
 cuisine = "Persian"
 dietary = ["meat", "vegetarian"]
-ingredient_count = 7
+ingredient_count = 6
 +++
 
 ## A Journey to the Perfect Fesenjan
@@ -32,7 +32,6 @@ The third time, everything aligned. The walnuts toasted without burning. The pom
 - 1 large onion
 - 200g shelled walnuts
 - 1 cup pomegranate juice (fresh or bottled — use a sour variety)
-- ¼ tsp turmeric
 - 2 tbsp oil
 - 3-4 cups cooked shredded chicken (or meatballs, or grilled cheese)
 - Salt and pepper to taste
