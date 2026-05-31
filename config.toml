@@ -27,3 +27,7 @@ paginate = 10
     name = "About"
     url = "/pages/about/"
     weight = 3
+  [[menu.main]]
+    name = "Support"
+    url = "/pages/support/"
+    weight = 4
