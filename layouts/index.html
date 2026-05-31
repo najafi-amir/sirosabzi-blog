@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ .Content }}
+{{ range (where .Site.RegularPages "Section" "posts") }}
+<article class="post-card{{ if .Params.image }} has-image{{ end }}">
+    {{ if .Params.image }}
+    <a href="{{ .Permalink }}" class="card-thumb">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </a>
+    <div class="card-body">
+    {{ end }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Description }}</p>
+    {{ if .Params.image }}</div>{{ end }}
+</article>
+{{ end }}
+{{ end }}

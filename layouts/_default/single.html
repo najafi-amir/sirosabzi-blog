@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="post-header">
+    <h1>{{ .Title }}</h1>
+    {{ if not .Date.IsZero }}
+    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+    {{ end }}
+</div>
+{{ if .Params.image }}
+<div class="post-image">
+    <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    {{ if .Params.image_credit }}<p class="image-credit">{{ .Params.image_credit }}</p>{{ end }}
+</div>
+{{ end }}
+<div class="post-content">
+    {{ .Content }}
+</div>
+{{ end }}

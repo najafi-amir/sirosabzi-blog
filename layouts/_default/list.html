@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h2 style="font-family: 'Playfair Display', Georgia, serif; font-size: 28px; font-weight: 400; color: #1a1a1a; margin-bottom: 2rem;">{{ .Title }}</h2>
+{{ range .Pages }}
+<article class="post-card{{ if .Params.image }} has-image{{ end }}">
+    {{ if .Params.image }}
+    <a href="{{ .Permalink }}" class="card-thumb">
+        <img src="{{ .Params.image }}" alt="{{ .Title }}">
+    </a>
+    <div class="card-body">
+    {{ end }}
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+        <p>{{ .Description }}</p>
+    {{ if .Params.image }}</div>{{ end }}
+</article>
+{{ end }}
+{{ end }}
