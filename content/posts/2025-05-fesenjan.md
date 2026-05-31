@@ -13,7 +13,7 @@ cook_time_minutes = 90
 difficulty = "moderate"
 cuisine = "Persian"
 dietary = ["meat", "vegetarian"]
-ingredient_count = 6
+ingredient_count = 7
 +++
 
 ## A Journey to the Perfect Fesenjan
@@ -23,16 +23,17 @@ ingredient_count = 6
 
 After two failed attempts and a kitchen filled with burnt walnut smoke, I finally understood what my grandmother meant when she said fesenjan requires patience. This pomegranate-walnut stew is not a quick dinner—it's a meditation, a slow dance between tart and sweet, earthy and floral.
 
-The third time, everything aligned. The walnuts toasted without burning. The pomegranate juice balanced against honey. And somewhere in those ninety minutes of simmering, the flavors stopped fighting and started singing.
+The third time, everything aligned. The walnuts toasted without burning. The pomegranate juice — sour enough to cut through the richness — finally balanced against the walnut paste the way it should. And somewhere in those ninety minutes of simmering, the flavors stopped fighting and started singing.
 
 {{< recipe />}}
 
 ### Ingredients
 
-- 1 cup shelled walnuts
-- 1 cup pomegranate juice (fresh or bottled)
-- 2-3 tbsp honey
+- 1 large onion
+- 200g shelled walnuts
+- 1 cup pomegranate juice (fresh or bottled — use a sour variety)
 - ¼ tsp turmeric
+- 2 tbsp oil
 - 3-4 cups cooked shredded chicken (or meatballs, or grilled cheese)
 - Salt and pepper to taste
 - Optional: cinnamon, cardamom, saffron for depth
