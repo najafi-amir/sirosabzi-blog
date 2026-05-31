@@ -5,9 +5,7 @@ description = "If you enjoy the recipes and stories here, consider buying me a c
 
 ## Keep the Kitchen Going
 
-Every recipe on this site takes time — testing, writing, and photographing. If you've cooked something from here and it turned out well, or if these stories have made you feel a little more at home in the kitchen, I'd love your support.
-
-A coffee goes a long way towards keeping the ingredients stocked and the words flowing.
+Every recipe here is a small labor of love — tested, written, and photographed with care. If a dish from this blog made your day a little brighter or your kitchen feel more like home, thank you for thinking of supporting the work. A cup of coffee, a tip, or a share helps keep the recipes coming and the oven warm.
 
 <div style="text-align:center; margin: 2.5rem 0;">
   <a href="https://www.buymeacoffee.com/sirosabzi" target="_blank" rel="noopener">
@@ -15,6 +13,4 @@ A coffee goes a long way towards keeping the ingredients stocked and the words f
   </a>
 </div>
 
----
-
-Thank you — *mersi* — for being here and for cooking with me.
+You just made my day. Thank you.

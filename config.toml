@@ -3,6 +3,11 @@ locale = "en-us"
 title = "SIR و SABZI"
 paginate = 10
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [outputs]
   home     = ["HTML", "RSS", "JSON"]
   page     = ["HTML"]
