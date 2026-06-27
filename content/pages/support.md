@@ -1,6 +1,9 @@
 +++
 title = "Support Sirosabzi"
 description = "If you enjoy the recipes and stories here, consider buying me a coffee."
+showDate = false
+showAuthor = false
+showReadingTime = false
 +++
 
 ## Keep the Kitchen Going

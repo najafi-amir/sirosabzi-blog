@@ -1,6 +1,9 @@
 +++
 title = "About"
 description = "About Sirosabzi"
+showDate = false
+showAuthor = false
+showReadingTime = false
 +++
 
 ## About This Blog
