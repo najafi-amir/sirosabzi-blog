@@ -12,78 +12,94 @@
           * { margin: 0; padding: 0; box-sizing: border-box; }
           body {
             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: rgb(253, 250, 247);
+            background: #fff;
             color: rgb(42, 30, 22);
             line-height: 1.6;
           }
           header {
-            background: rgb(253, 250, 247);
-            border-bottom: 1px solid rgb(232, 221, 210);
-            padding: 1rem 1.5rem;
-          }
-          .header-inner {
+            padding: 1.5rem 1.5rem 0;
             max-width: 768px;
             margin: 0 auto;
+          }
+          .header-inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding-bottom: 1.5rem;
           }
           .site-title {
-            font-size: 1.25rem;
-            font-weight: 800;
+            font-size: 1.1rem;
+            font-weight: 700;
             color: rgb(42, 30, 22);
             text-decoration: none;
           }
-          .site-title:hover { color: rgb(196, 98, 45); }
+          .site-title:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(196, 98, 45);
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+          }
           .back-link {
             font-size: 0.875rem;
-            color: rgb(122, 92, 62);
+            color: rgb(154, 132, 120);
             text-decoration: none;
           }
-          .back-link:hover { text-decoration: underline; color: rgb(196, 98, 45); }
+          .back-link:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(196, 98, 45);
+            text-underline-offset: 2px;
+            text-decoration-thickness: 2px;
+            color: rgb(42, 30, 22);
+          }
           main {
             max-width: 768px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
+            margin: 0 auto;
+            padding: 0 1.5rem 2rem;
           }
           .intro {
-            background: rgb(255, 255, 255);
-            border: 1px solid rgb(232, 221, 210);
-            border-radius: 0.5rem;
-            padding: 1.5rem;
+            background: rgb(253, 250, 247);
+            border: 1px solid rgb(240, 237, 232);
+            border-radius: 0.375rem;
+            padding: 1.25rem 1.5rem;
             margin-bottom: 2rem;
           }
           .intro h1 {
-            font-size: 1.5rem;
-            font-weight: 800;
+            font-size: 1.125rem;
+            font-weight: 700;
             color: rgb(42, 30, 22);
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
           }
-          .rss-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 1.5rem;
-            height: 1.5rem;
+          .rss-dot {
+            display: inline-block;
+            width: 0.5rem;
+            height: 0.5rem;
             background: rgb(196, 98, 45);
-            border-radius: 0.25rem;
+            border-radius: 50%;
             flex-shrink: 0;
           }
-          .rss-icon svg { width: 0.875rem; height: 0.875rem; fill: white; }
-          .intro p { font-size: 0.875rem; color: rgb(122, 92, 62); line-height: 1.7; }
-          .intro a { color: rgb(196, 98, 45); text-decoration: underline; text-underline-offset: 2px; }
-          .intro a:hover { color: rgb(176, 80, 32); }
+          .intro p {
+            font-size: 0.875rem;
+            color: rgb(122, 92, 62);
+            line-height: 1.7;
+          }
+          .intro a {
+            color: rgb(196, 98, 45);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            text-decoration-thickness: 1px;
+          }
+          .intro a:hover { text-decoration-thickness: 2px; }
           .feed-url {
             margin-top: 0.75rem;
             font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, monospace;
-            font-size: 0.8rem;
-            background: rgb(253, 250, 247);
-            padding: 0.5rem 0.75rem;
-            border-radius: 0.375rem;
-            border: 1px solid rgb(232, 221, 210);
+            font-size: 0.75rem;
+            background: #fff;
+            padding: 0.4rem 0.75rem;
+            border-radius: 0.25rem;
+            border: 1px solid rgb(240, 237, 232);
             display: inline-block;
             color: rgb(97, 75, 55);
             word-break: break-all;
@@ -94,9 +110,9 @@
           }
           article:last-child { border-bottom: none; }
           article h2 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-bottom: 0.25rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.2rem;
             line-height: 1.4;
           }
           article h2 a {
@@ -104,14 +120,15 @@
             color: rgb(42, 30, 22);
           }
           article h2 a:hover {
-            color: rgb(196, 98, 45);
             text-decoration: underline;
+            text-decoration-color: rgb(196, 98, 45);
             text-underline-offset: 2px;
+            text-decoration-thickness: 2px;
           }
           .meta {
             font-size: 0.75rem;
             color: rgb(154, 132, 120);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
           }
           article p {
             font-size: 0.875rem;
@@ -120,18 +137,21 @@
           }
           footer {
             max-width: 768px;
-            margin: 3rem auto 0;
-            padding: 1.5rem;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
             text-align: center;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: rgb(154, 132, 120);
-            border-top: 1px solid rgb(240, 237, 232);
           }
-          footer a { color: rgb(196, 98, 45); text-decoration: none; }
-          footer a:hover { text-decoration: underline; }
+          footer a { color: rgb(154, 132, 120); text-decoration: none; }
+          footer a:hover {
+            text-decoration: underline;
+            text-decoration-color: rgb(196, 98, 45);
+            text-underline-offset: 2px;
+          }
           @media (max-width: 640px) {
-            main { padding: 0 1rem; }
-            .intro { padding: 1.25rem; }
+            header, main { padding-left: 1rem; padding-right: 1rem; }
+            .intro { padding: 1rem 1.25rem; }
           }
         </style>
       </head>
@@ -145,7 +165,7 @@
         <main>
           <div class="intro">
             <h1>
-              <span class="rss-icon"><svg viewBox="0 0 24 24"><path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19.01 7.38 20 6.18 20C4.98 20 4 19.01 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93V10.1z"/></svg></span>
+              <span class="rss-dot"></span>
               RSS Feed
             </h1>
             <p>Subscribe to <strong><xsl:value-of select="/rss/channel/title"/></strong> by copying the URL below into your feed reader.</p>
