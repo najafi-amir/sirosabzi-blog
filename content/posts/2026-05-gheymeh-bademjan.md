@@ -5,6 +5,7 @@ description = "A Persian split pea stew where slow-cooked diced meat meets golde
 tags = ["persian", "stew", "eggplant", "split-peas", "saffron", "meat", "vegetarian"]
 categories = ["recipes"]
 draft = false
+image = "/images/gheymeh-bademjan.jpg"
 
 [recipe]
 yield = "4 servings"
