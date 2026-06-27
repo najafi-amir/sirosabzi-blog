@@ -1,10 +1,34 @@
----
-title: "Ab Doogh Khiar: The Cold Soup That Saves Summer"
-date: 2026-06-27
-draft: false
-description: "A chilled Persian yoghurt soup loaded with cucumbers, herbs, walnuts, and raisins — no cooking required."
-image: "/images/ab-doogh-khiar.jpg"
----
++++
+title = "Ab Doogh Khiar: The Cold Soup That Saves Summer"
+date = 2026-06-27
+description = "A chilled Persian yoghurt soup loaded with cucumbers, herbs, walnuts, and raisins — no cooking required."
+tags = ["persian", "yoghurt", "cold-soup", "summer", "vegetarian", "quick"]
+categories = ["recipes"]
+draft = false
+
+[recipe]
+yield = "4 servings"
+prep_time_minutes = 15
+cook_time_minutes = 0
+difficulty = "easy"
+cuisine = "Persian"
+category = "Cold Soup"
+dietary = ["vegetarian"]
+ingredient_count = 11
+ingredients = [
+  "1 medium cucumber",
+  "400g plain yoghurt (full-fat works best)",
+  "300ml cold water",
+  "A generous handful of fresh herbs: mint, basil, dill, tarragon",
+  "1–2 spring onions",
+  "4–5 radishes",
+  "50g walnuts",
+  "50g raisins",
+  "1–2 tsp dried rose petals (optional)",
+  "Salt and pepper to taste",
+  "A few ice cubes for serving"
+]
++++
 
 ## A Bowl of Cool Calm
 
@@ -12,10 +36,7 @@ image: "/images/ab-doogh-khiar.jpg"
 
 What makes it brilliant is how little effort it asks of you. No stovetop, no oven, no fuss. You chop, you mix, you chill. Fifteen minutes and you have something that feels like it took far more care than it did. Serve it with warm flatbread and you have a meal that is as nourishing as it is refreshing.
 
-🍽 Serves: 4
-⏱ Prep: 15 min
-🔥 Cook: 0 min — no cooking required
-📊 Level: easy
+{{< recipe />}}
 
 ### Ingredients
 

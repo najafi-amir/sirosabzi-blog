@@ -5,7 +5,6 @@ description = "A creamy Indian mango lassi lifted with saffron and finished with
 tags = ["drink", "mango", "saffron", "summer", "indian", "vegetarian", "quick"]
 categories = ["recipes"]
 draft = false
-image = "/images/mango-lassi.jpg"
 
 [recipe]
 yield = "2 servings"

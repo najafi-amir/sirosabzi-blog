@@ -1,0 +1,50 @@
+colorScheme = "sirosabzi"
+defaultAppearance = "light"
+autoSwitchAppearance = false
+
+enableSearch = true
+enableCodeCopy = false
+enableImageLazyLoading = true
+enableImageWebp = true
+
+fingerprintAlgorithm = "sha256"
+
+[header]
+  layout = "basic"
+  logo = "images/logo.png"
+  showTitle = true
+
+[footer]
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = false
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = true
+  recentLimit = 10
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showBreadcrumbs = false
+  showDraftLabel = true
+  showEdit = false
+  showHeadingAnchors = false
+  showPagination = true
+  invertPagination = false
+  showReadingTime = true
+  showTableOfContents = false
+  showTaxonomies = true
+  showWordCount = false
+  showComments = false
+
+[list]
+  showBreadcrumbs = false
+  showSummary = true
+  showTableOfContents = false
+  showTaxonomies = false
+  groupByYear = false
+  paginationWidth = 1

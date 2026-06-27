@@ -1,0 +1,14 @@
+locale = "en-us"
+direction = "ltr"
+weight = 1
+
+title = "SIR و SABZI"
+
+[params]
+  dateFormat = "January 2, 2006"
+  mainSections = ["posts"]
+  description = "A food blog celebrating Persian and international cuisine"
+
+[params.author]
+  name = "Amir"
+  headline = "Persian & International Cuisine"

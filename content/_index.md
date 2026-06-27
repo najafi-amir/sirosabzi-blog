@@ -1,10 +1,6 @@
----
-title: "Sirosabzi"
-description: "A food blog celebrating Persian and international cuisine"
----
++++
+title = "SIR و SABZI"
+description = "A food blog celebrating Persian and international cuisine"
++++
 
-# Welcome to Sirosabzi
-
-A space for recipes, stories, and the art of cooking well.
-
-[View Latest Posts](/posts/)
+Welcome to Sirosabzi — a space for recipes, stories, and the art of cooking well.
