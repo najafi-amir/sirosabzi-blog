@@ -6,8 +6,6 @@ description: "A chilled Persian yoghurt soup loaded with cucumbers, herbs, walnu
 image: "/images/ab-doogh-khiar.jpg"
 ---
 
-![Ab Doogh Khiar](/images/ab-doogh-khiar.jpg)
-
 ## A Bowl of Cool Calm
 
 *آب دوغ خیار* is the dish Iranians reach for when the sun refuses to let up. It is not quite a soup and not quite a drink — it sits somewhere in between, a creamy, herb-flecked bowl that cools you from the inside out. Cucumber for crunch, yoghurt for body, mint for that sharp green lift, and a handful of walnuts and raisins to keep things interesting.
